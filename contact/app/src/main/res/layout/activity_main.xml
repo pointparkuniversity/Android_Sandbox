@@ -208,7 +208,7 @@
         android:id="@+id/textView6"
         android:layout_width="147dp"
         android:layout_height="32dp"
-        android:text="ShadySide"
+        android:text="Shadyside"
         android:textColor="#4D4D4D"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
