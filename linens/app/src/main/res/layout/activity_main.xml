@@ -11,7 +11,7 @@
         android:layout_width="40dp"
         android:layout_height="42dp"
         android:backgroundTint="#AEB7B6"
-        android:onClick="countDE7"
+        android:onClick="queenDE"
         android:text="-"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -26,7 +26,7 @@
         android:layout_width="40dp"
         android:layout_height="42dp"
         android:backgroundTint="#AEB7B6"
-        android:onClick="countIN7"
+        android:onClick="queenIN"
         android:text="+"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -37,7 +37,7 @@
         app:layout_constraintVertical_bias="0.862" />
 
     <EditText
-        android:id="@+id/counterValue7"
+        android:id="@+id/queenValue"
         android:layout_width="40dp"
         android:layout_height="42dp"
         android:ems="10"
@@ -55,7 +55,7 @@
         android:layout_width="40dp"
         android:layout_height="42dp"
         android:backgroundTint="#AEB7B6"
-        android:onClick="countDE6"
+        android:onClick="twinDE"
         android:text="-"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -70,7 +70,7 @@
         android:layout_width="40dp"
         android:layout_height="42dp"
         android:backgroundTint="#AEB7B6"
-        android:onClick="countIN6"
+        android:onClick="twinIN"
         android:text="+"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -85,7 +85,7 @@
         android:layout_width="40dp"
         android:layout_height="42dp"
         android:backgroundTint="#AEB7B6"
-        android:onClick="countDE4"
+        android:onClick="bathmatDE"
         android:text="-"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -96,7 +96,7 @@
         app:layout_constraintVertical_bias="0.619" />
 
     <EditText
-        android:id="@+id/counterValue5"
+        android:id="@+id/blueValue"
         android:layout_width="40dp"
         android:layout_height="42dp"
         android:ems="10"
@@ -110,7 +110,7 @@
         app:layout_constraintVertical_bias="0.698" />
 
     <EditText
-        android:id="@+id/counterValue6"
+        android:id="@+id/twinValue"
         android:layout_width="40dp"
         android:layout_height="42dp"
         android:ems="10"
@@ -128,7 +128,7 @@
         android:layout_width="40dp"
         android:layout_height="42dp"
         android:backgroundTint="#AEB7B6"
-        android:onClick="countIN5"
+        android:onClick="bluebagIN"
         android:text="+"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -143,7 +143,7 @@
         android:layout_width="40dp"
         android:layout_height="42dp"
         android:backgroundTint="#AEB7B6"
-        android:onClick="countDE5"
+        android:onClick="bluebagDE"
         android:text="-"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -154,7 +154,7 @@
         app:layout_constraintVertical_bias="0.698" />
 
     <EditText
-        android:id="@+id/counterValue4"
+        android:id="@+id/bathValue"
         android:layout_width="40dp"
         android:layout_height="42dp"
         android:ems="10"
@@ -172,7 +172,7 @@
         android:layout_width="40dp"
         android:layout_height="42dp"
         android:backgroundTint="#AEB7B6"
-        android:onClick="countIN4"
+        android:onClick="bathmatIN"
         android:text="+"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -187,7 +187,7 @@
         android:layout_width="40dp"
         android:layout_height="42dp"
         android:backgroundTint="#AEB7B6"
-        android:onClick="countDE3"
+        android:onClick="clothDE"
         android:text="-"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -198,7 +198,7 @@
         app:layout_constraintVertical_bias="0.541" />
 
     <EditText
-        android:id="@+id/counterValue3"
+        android:id="@+id/washValue"
         android:layout_width="40dp"
         android:layout_height="42dp"
         android:ems="10"
@@ -216,7 +216,7 @@
         android:layout_width="40dp"
         android:layout_height="42dp"
         android:backgroundTint="#AEB7B6"
-        android:onClick="countIN3"
+        android:onClick="clothIN"
         android:text="+"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -231,7 +231,7 @@
         android:layout_width="40dp"
         android:layout_height="42dp"
         android:backgroundTint="#AEB7B6"
-        android:onClick="countDE2"
+        android:onClick="towelDE"
         android:text="-"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -242,7 +242,7 @@
         app:layout_constraintVertical_bias="0.461" />
 
     <EditText
-        android:id="@+id/counterValue2"
+        android:id="@+id/towelValue"
         android:layout_width="40dp"
         android:layout_height="42dp"
         android:ems="10"
@@ -260,7 +260,7 @@
         android:layout_width="40dp"
         android:layout_height="42dp"
         android:backgroundTint="#AEB7B6"
-        android:onClick="countIN2"
+        android:onClick="towelIN"
         android:text="+"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -362,7 +362,7 @@
         android:layout_width="40dp"
         android:layout_height="42dp"
         android:backgroundTint="#AEB7B6"
-        android:onClick="countIN"
+        android:onClick="guestIN"
         android:text="+"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -377,7 +377,7 @@
         android:layout_width="40dp"
         android:layout_height="42dp"
         android:backgroundTint="#AEB7B6"
-        android:onClick="countDE"
+        android:onClick="guestDE"
         android:text="-"
         android:textColor="#020202"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -388,7 +388,7 @@
         app:layout_constraintVertical_bias="0.381" />
 
     <EditText
-        android:id="@+id/counterValue"
+        android:id="@+id/guestValue"
         android:layout_width="40dp"
         android:layout_height="42dp"
         android:ems="10"

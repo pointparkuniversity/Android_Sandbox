@@ -14,11 +14,11 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
-    EditText showValue;
-    int counter = 1;
+    EditText showGuest;
+    int guest = 1;
 
-    EditText showNumbers;
-    int count = 1;
+    EditText showTowels;
+    int towel = 1;
 
     EditText showCloth;
     int wash = 1;
@@ -44,13 +44,13 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         getSupportActionBar().setCustomView(R.layout.action_bar_layout);
 
-        showValue = (EditText) findViewById(R.id.counterValue);
-        showNumbers = (EditText) findViewById(R.id.counterValue2);
-        showCloth = (EditText) findViewById(R.id.counterValue3);
-        showBath = (EditText) findViewById(R.id.counterValue4);
-        showBlue = (EditText) findViewById(R.id.counterValue5);
-        showTwin = (EditText) findViewById(R.id.counterValue6);
-        showQueen = (EditText) findViewById(R.id.counterValue7);
+        showGuest = (EditText) findViewById(R.id.guestValue);
+        showTowels = (EditText) findViewById(R.id.towelValue);
+        showCloth = (EditText) findViewById(R.id.washValue);
+        showBath = (EditText) findViewById(R.id.bathValue);
+        showBlue = (EditText) findViewById(R.id.blueValue);
+        showTwin = (EditText) findViewById(R.id.twinValue);
+        showQueen = (EditText) findViewById(R.id.queenValue);
 
         Spinner spinner = findViewById(R.id.spinner1);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
@@ -60,72 +60,72 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         spinner.setOnItemSelectedListener(this);
     }
 
-    public void countIN (View view) {
-        counter++;
-        showValue.setText(Integer.toString(counter));
+    public void guestIN (View view) {
+        guest++;
+        showGuest.setText(Integer.toString(guest));
     }
 
-    public void countIN2 (View view) {
-        count++;
-        showNumbers.setText(Integer.toString(count));
+    public void towelIN (View view) {
+        towel++;
+        showTowels.setText(Integer.toString(towel));
     }
 
-    public void countIN3 (View view) {
+    public void clothIN (View view) {
         wash++;
         showCloth.setText(Integer.toString(wash));
     }
 
-    public void countIN4 (View view) {
+    public void bathmatIN (View view) {
         bath++;
         showBath.setText(Integer.toString(bath));
     }
 
-    public void countIN5 (View view) {
+    public void bluebagIN (View view) {
         blue++;
         showBlue.setText(Integer.toString(blue));
     }
 
-    public void countIN6 (View view) {
+    public void twinIN (View view) {
         twin++;
         showTwin.setText(Integer.toString(twin));
     }
 
-    public void countIN7 (View view) {
+    public void queenIN (View view) {
         queen++;
         showQueen.setText(Integer.toString(queen));
     }
 
-    public void countDE (View view) {
-        counter--;
-        showValue.setText(Integer.toString(counter));
+    public void guestDE (View view) {
+        guest--;
+        showGuest.setText(Integer.toString(guest));
     }
 
-    public void countDE2 (View view) {
-        count--;
-        showNumbers.setText(Integer.toString(count));
+    public void towelDE (View view) {
+        towel--;
+        showTowels.setText(Integer.toString(towel));
     }
 
-    public void countDE3 (View view) {
+    public void clothDE (View view) {
         wash--;
         showCloth.setText(Integer.toString(wash));
     }
 
-    public void countDE4 (View view) {
+    public void bathmatDE (View view) {
         bath--;
         showBath.setText(Integer.toString(bath));
     }
 
-    public void countDE5 (View view) {
+    public void bluebagDE (View view) {
         blue--;
         showBlue.setText(Integer.toString(blue));
     }
 
-    public void countDE6 (View view) {
+    public void twinDE (View view) {
         twin--;
         showTwin.setText(Integer.toString(twin));
     }
 
-    public void countDE7 (View view) {
+    public void queenDE (View view) {
         queen--;
         showQueen.setText(Integer.toString(queen));
     }
