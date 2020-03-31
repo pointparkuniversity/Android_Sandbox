@@ -11,13 +11,13 @@ import retrofit2.http.POST;
 interface Faq {
 
     //Get and Posts located here
-    @GET("/posts/")
+    @GET("/posts")
     Call<ResponseBody> getPosts(@Body RequestBody requestBody);
 
-    @GET("/users/")
+    @GET("/users")
     Call<ResponseBody> getUsers(@Body RequestBody requestBody);
 
-    @POST("/users/")
+    @POST("/users")
     Call<ResponseBody> postUser(@Body RequestBody requestBody);
 
 }
