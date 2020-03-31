@@ -23,18 +23,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://familyhouse.it.pointpark.edu:3000/api/v1/faq")
+                .baseUrl("http://familyhouse.it.pointpark.edu:3000/api/v1/faq/")
                 .build();
 
         Faq faq = retrofit.create(Faq.class);
 
 
         String postmsg = "{\n" +
-                "\t\t\"faqid\": 1,\n" +
-                "\t\t\"Question\": \"What is Family House?\"\n" +
-                "\t\t\"Category\": \"general\"n" +
-                "\t\t\"Answer\": \"Family House is a 501(c)(3) non-profit charitable organization governed by a community Board of Directors. We rely on donations to support the homes and services provided to all guests. \\n\" +\n" +
-                "                \"Family House’s charitable care—which is the difference between what a room costs the organization to operate vs. what Family House charges—amounts to more than $1.2 million annually. These funds are provided each year through generous contributions from individuals, companies, foundations, and other organizations.\"n" +
+                "\t\t\"id\": 1,\n" +
+                "\t\t\"section_Id\": 1,\n" +
+                "\t\t\"Question\": \"What is Family House?\"n" +
+                "\t\t\"answer\": \"Family House is a 501(c)(3) nonprofit charitable organization whose mission is to provide a convenient and affordable “home away from home” for patients and their caregivers who must travel to Pittsburgh for medical treatment. \n"  +
+                "\t\t\"Order\": 1,\n" +
                 "}";
 
         /*
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
                 try {
-                    Log.d("PostExample", response.body().string());
+                    Log.d("PostExample", response.body();
                 } catch (IOException e){
                     e.printStackTrace();
                 }
@@ -63,19 +63,5 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }
