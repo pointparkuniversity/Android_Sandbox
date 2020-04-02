@@ -1,21 +1,18 @@
 package com.familyhouse.faq_api;
 
-import androidx.appcompat.app.AppCompatActivity;
+        import androidx.appcompat.app.AppCompatActivity;
+        import android.os.Bundle;
 
-import android.os.Bundle;
+        import okhttp3.ResponseBody;
+        import retrofit2.Retrofit;
+        import retrofit2.http.GET;
+        import retrofit2.Call;
+        import retrofit2.Callback;
+        import retrofit2.Response;
+        import android.util.Log;
+        import android.app.ActionBar;
 
-import java.io.IOException;
-//import java.net.*;
-//import java.io.*;
-import okhttp3.MediaType;
-import okhttp3.RequestBody;
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-import retrofit2.Retrofit;
-import okhttp3.ResponseBody;
-import android.util.Log;
-import android.app.ActionBar;
+        import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,45 +29,16 @@ public class MainActivity extends AppCompatActivity {
                 .build();
 
         Faq faq = retrofit.create(Faq.class);
+        faq.getFaq().enqueue(new Callback<ResponseBody>() {
 
+//        Api api = retrofit.create(Api.class);
+//        api.getIp().enqueue(new Callback<ResponseBody>() {
 
-        String postmsg = "{\n" +
-                "\t\t\"id\": 1,\n" +
-                "\t\t\"section_Id\": 1,\n" +
-                "\t\t\"Question\": \"What is Family House?\"n" +
-                "\t\t\"answer\": \"Family House is a 501(c)(3) nonprofit charitable organization whose mission is to provide a convenient and affordable “home away from home” for patients and their caregivers who must travel to Pittsburgh for medical treatment. \n"  +
-                "\t\t\"Order\": 1,\n" +
-                "}";
-
-        /*
-        JSON Code that we want to use
-          {
-            "id": 900,
-            "name": "Bob Phillips"
-          }
-          */
-        //Request the body
-        RequestBody requestBody = RequestBody.create(MediaType.parse("application/json"), postmsg);
-        faq.postUser(requestBody).enqueue(new Callback<ResponseBody>() {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
                 try {
-                    Log.d("PostExample", response.body().string());
-                } catch (IOException e){
-                    e.printStackTrace();
-                }
-            }
-            @Override
-            public void onFailure(Call<ResponseBody> call, Throwable t) {
-            }
-        });
-
-        faq.getPosts(requestBody).enqueue(new Callback<ResponseBody>() {
-            @Override
-            public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
-                try {
-                    Log.d("postGet", response.body().string());
-                }   catch (IOException e) {
+                    Log.d("RetroStart", response.body().string());
+                } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
@@ -80,5 +48,16 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+
+//    interface Api {
+//        @GET("/")
+//        Call<ResponseBody> getIp();
+//    }
+
+    interface Faq {
+        @GET("/")
+        Call<Readable> getFaq();
     }
 }

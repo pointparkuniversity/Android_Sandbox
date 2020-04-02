@@ -14,8 +14,8 @@ interface Faq {
     @GET("/posts")
     Call<ResponseBody> getPosts(@Body RequestBody requestBody);
 
-    @GET("/users")
-    Call<ResponseBody> getUsers(@Body RequestBody requestBody);
+    @GET("/faq")
+    Call<ResponseBody> getFAQ(@Body RequestBody requestBody);
 
     @POST("/users")
     Call<ResponseBody> postUser(@Body RequestBody requestBody);
