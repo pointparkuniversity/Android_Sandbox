@@ -5,15 +5,19 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.app.ActionBar;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 import android.widget.EditText;
 
 public class LinensActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+    public Button button16;
+
 
     EditText showGuest;
     int guest = 1;
@@ -41,6 +45,16 @@ public class LinensActivity extends AppCompatActivity implements AdapterView.OnI
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.linens_main);
+
+        button16 = (Button) findViewById(R.id.button);
+        button16.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LinensActivity.this,MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         showGuest = (EditText) findViewById(R.id.guestValue);
         showTowels = (EditText) findViewById(R.id.towelValue);

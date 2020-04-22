@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class SettingsActivity extends AppCompatActivity {
     public Button button10;
+    public Button button2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

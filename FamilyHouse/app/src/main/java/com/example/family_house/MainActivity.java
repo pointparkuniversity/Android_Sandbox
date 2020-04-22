@@ -17,19 +17,12 @@ public class MainActivity extends AppCompatActivity {
     public Button button7;
     public Button button8;
     public Button button;
-    public Button button4;
+
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        button = (Button) findViewById(R.id.button4);
-        button4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,ContactActivity.class);
-                startActivity(intent);
-            }
-        });
+
 
         button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {

@@ -88,10 +88,6 @@
         "source": "C:\\Users\\rilou\\Documents\\GitHub\\Android_Sandbox\\FamilyHouse\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\rilou\\Documents\\GitHub\\Android_Sandbox\\FamilyHouse\\app\\build\\intermediates\\res\\merged\\debug\\layout_contact.xml.flat",
-        "source": "C:\\Users\\rilou\\Documents\\GitHub\\Android_Sandbox\\FamilyHouse\\app\\src\\main\\res\\layout\\contact.xml"
-    },
-    {
         "merged": "C:\\Users\\rilou\\Documents\\GitHub\\Android_Sandbox\\FamilyHouse\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\rilou\\Documents\\GitHub\\Android_Sandbox\\FamilyHouse\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
@@ -132,12 +128,12 @@
         "source": "C:\\Users\\rilou\\Documents\\GitHub\\Android_Sandbox\\FamilyHouse\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\rilou\\Documents\\GitHub\\Android_Sandbox\\FamilyHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable_greycal.png.flat",
-        "source": "C:\\Users\\rilou\\Documents\\GitHub\\Android_Sandbox\\FamilyHouse\\app\\src\\main\\res\\drawable\\greycal.png"
-    },
-    {
         "merged": "C:\\Users\\rilou\\Documents\\GitHub\\Android_Sandbox\\FamilyHouse\\app\\build\\intermediates\\res\\merged\\debug\\layout_linens_main.xml.flat",
         "source": "C:\\Users\\rilou\\Documents\\GitHub\\Android_Sandbox\\FamilyHouse\\app\\src\\main\\res\\layout\\linens_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\rilou\\Documents\\GitHub\\Android_Sandbox\\FamilyHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable_greycal.png.flat",
+        "source": "C:\\Users\\rilou\\Documents\\GitHub\\Android_Sandbox\\FamilyHouse\\app\\src\\main\\res\\drawable\\greycal.png"
     },
     {
         "merged": "C:\\Users\\rilou\\Documents\\GitHub\\Android_Sandbox\\FamilyHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable_greylinen.png.flat",
