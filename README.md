@@ -189,5 +189,5 @@ showGuest = (EditText) findViewById(R.id.guestValue);
 ```
 - Here's the __Contact Page__!
 ---
-[Linens](https://sabdul.it.pointpark.edu/linens.png)
+![Linens](https://sabdul.it.pointpark.edu/linens.png)
 ---
