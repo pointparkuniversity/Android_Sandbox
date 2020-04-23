@@ -11,7 +11,7 @@ This is a sandbox that will be used during the semester, while we learn to progr
 > **NOTE** The Linens and FAQ are harded coded for now! It will later be revised for API input and will finalize before published on the android app store.
 
 
-##Linens
+## Linens
 
 - The Linens page is pretty similar to the iOS version. Expect, the Android only have the fill in the blanket for text columns of linens request section
 
@@ -28,7 +28,7 @@ showGuest = (EditText) findViewById(R.id.guestValue);
         showTwin = (EditText) findViewById(R.id.twinValue);
         showQueen = (EditText) findViewById(R.id.queenValue);
 ```
-^ Here's the public class code added as well as the EditText functionality
+- Here's the public class code added as well as the EditText functionality
 ```java
 //This the EditText explained above that is use and explained
     EditText showGuest;
@@ -188,5 +188,6 @@ showGuest = (EditText) findViewById(R.id.guestValue);
         app:layout_constraintVertical_bias="0.483" />
 ```
 - Here's the __Contact Page__!
-Inline-style: 
+---
 [Linens](https://sabdul.it.pointpark.edu/linens.png)
+---
