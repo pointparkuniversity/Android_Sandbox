@@ -1,0 +1,52 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.familyhouse.myapplication"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="22"
+8-->/Users/sammyabdulkader/Desktop/Android_Sandbox/FamilyHouse/faq/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/Users/sammyabdulkader/Desktop/Android_Sandbox/FamilyHouse/faq/src/main/AndroidManifest.xml
+10
+11    <application
+11-->/Users/sammyabdulkader/Desktop/Android_Sandbox/FamilyHouse/faq/src/main/AndroidManifest.xml:5:5-21:19
+12        android:layout_gravity="center"
+12-->/Users/sammyabdulkader/Desktop/Android_Sandbox/FamilyHouse/faq/src/main/AndroidManifest.xml:9:9-40
+13        android:allowBackup="true"
+13-->/Users/sammyabdulkader/Desktop/Android_Sandbox/FamilyHouse/faq/src/main/AndroidManifest.xml:6:9-35
+14        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+14-->[androidx.core:core:1.1.0] /Users/sammyabdulkader/.gradle/caches/transforms-2/files-2.1/da95e0dd41fd0c634661df2a0f122634/core-1.1.0/AndroidManifest.xml:24:18-86
+15        android:debuggable="true"
+16        android:icon="@mipmap/ic_launcher"
+16-->/Users/sammyabdulkader/Desktop/Android_Sandbox/FamilyHouse/faq/src/main/AndroidManifest.xml:7:9-43
+17        android:label="@string/app_name"
+17-->/Users/sammyabdulkader/Desktop/Android_Sandbox/FamilyHouse/faq/src/main/AndroidManifest.xml:8:9-41
+18        android:roundIcon="@mipmap/ic_launcher_round"
+18-->/Users/sammyabdulkader/Desktop/Android_Sandbox/FamilyHouse/faq/src/main/AndroidManifest.xml:10:9-54
+19        android:supportsRtl="true"
+19-->/Users/sammyabdulkader/Desktop/Android_Sandbox/FamilyHouse/faq/src/main/AndroidManifest.xml:11:9-35
+20        android:testOnly="true"
+21        android:theme="@style/AppTheme" >
+21-->/Users/sammyabdulkader/Desktop/Android_Sandbox/FamilyHouse/faq/src/main/AndroidManifest.xml:12:9-40
+22        <activity android:name="com.example.family_house.Activity2" />
+22-->/Users/sammyabdulkader/Desktop/Android_Sandbox/FamilyHouse/faq/src/main/AndroidManifest.xml:13:9-80
+22-->/Users/sammyabdulkader/Desktop/Android_Sandbox/FamilyHouse/faq/src/main/AndroidManifest.xml:13:19-68
+23        <activity android:name="com.example.family_house.FAQActivity" >
+23-->/Users/sammyabdulkader/Desktop/Android_Sandbox/FamilyHouse/faq/src/main/AndroidManifest.xml:14:9-20:20
+23-->/Users/sammyabdulkader/Desktop/Android_Sandbox/FamilyHouse/faq/src/main/AndroidManifest.xml:14:19-70
+24            <intent-filter>
+24-->/Users/sammyabdulkader/Desktop/Android_Sandbox/FamilyHouse/faq/src/main/AndroidManifest.xml:15:13-19:29
+25                <action android:name="android.intent.action.MAIN" />
+25-->/Users/sammyabdulkader/Desktop/Android_Sandbox/FamilyHouse/faq/src/main/AndroidManifest.xml:16:17-69
+25-->/Users/sammyabdulkader/Desktop/Android_Sandbox/FamilyHouse/faq/src/main/AndroidManifest.xml:16:25-66
+26
+27                <category android:name="android.intent.category.LAUNCHER" />
+27-->/Users/sammyabdulkader/Desktop/Android_Sandbox/FamilyHouse/faq/src/main/AndroidManifest.xml:18:17-77
+27-->/Users/sammyabdulkader/Desktop/Android_Sandbox/FamilyHouse/faq/src/main/AndroidManifest.xml:18:27-74
+28            </intent-filter>
+29        </activity>
+30    </application>
+31
+32</manifest>

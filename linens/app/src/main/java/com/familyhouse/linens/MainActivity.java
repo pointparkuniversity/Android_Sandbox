@@ -15,25 +15,28 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     EditText showGuest;
-    int guest = 1;
+    int guest = 0;
+
+    EditText showBlanket;
+    int blanket = 0;
 
     EditText showTowels;
-    int towel = 1;
+    int towel = 0;
 
     EditText showCloth;
-    int wash = 1;
+    int wash = 0;
 
     EditText showBath;
-    int bath = 1;
+    int bath = 0;
 
     EditText showBlue;
-    int blue = 1;
+    int blue = 0;
 
     EditText showTwin;
-    int twin =  1;
+    int twin =  0;
 
     EditText showQueen;
-    int queen = 1;
+    int queen = 0;
 
 
     @Override
@@ -45,6 +48,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         getSupportActionBar().setCustomView(R.layout.action_bar_layout);
 
         showGuest = (EditText) findViewById(R.id.guestValue);
+        showBlanket = (EditText) findViewById(R.id.blanketValue);
         showTowels = (EditText) findViewById(R.id.towelValue);
         showCloth = (EditText) findViewById(R.id.washValue);
         showBath = (EditText) findViewById(R.id.bathValue);
@@ -63,6 +67,11 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     public void guestIN (View view) {
         guest++;
         showGuest.setText(Integer.toString(guest));
+    }
+
+    public void blanketIN (View view) {
+        blanket++;
+        showBlanket.setText(Integer.toString(blanket));
     }
 
     public void towelIN (View view) {
@@ -98,6 +107,11 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     public void guestDE (View view) {
         guest--;
         showGuest.setText(Integer.toString(guest));
+    }
+
+    public void blanketDE (View view) {
+        blanket--;
+        showBlanket.setText(Integer.toString(blanket));
     }
 
     public void towelDE (View view) {
